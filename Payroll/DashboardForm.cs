@@ -41,6 +41,9 @@ namespace Payroll
             switch (obj.TabIndex)
             {
                 case 1://Employee record
+                    EmployeeListForm elForm = new EmployeeListForm();
+                    this.Hide();
+                    elForm.Show();
                     break;
                 case 2://Nature of income
                     break;
