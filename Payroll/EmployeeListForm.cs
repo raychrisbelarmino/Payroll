@@ -35,6 +35,11 @@ namespace Payroll
             employeeList.Add(new EmployeeModel() { ID = "A5", LName = "Doe", FName = "Clark", DateStarted = "01/01/2020", Deductions = new ObservableCollection<EmployeeDeductionsModel>() });
         }
 
+        void SearchData()//get data from DB
+        {
+            
+        }
+
         void PopulateListView()
         {
             DataTable dt = new DataTable();
@@ -51,6 +56,11 @@ namespace Payroll
             EmployeeDataGrid.Columns[1].Width = 241;
             EmployeeDataGrid.Columns[2].Width = 241;
             EmployeeDataGrid.Columns[3].Width = 151;
+
+            EmployeeDataGrid.Columns[0].SortMode = DataGridViewColumnSortMode.Automatic;
+            EmployeeDataGrid.Columns[1].SortMode = DataGridViewColumnSortMode.Automatic;
+            EmployeeDataGrid.Columns[2].SortMode = DataGridViewColumnSortMode.Automatic;
+            EmployeeDataGrid.Columns[3].SortMode = DataGridViewColumnSortMode.Automatic;
         }
 
         private void Back_Click(object sender, EventArgs e)
@@ -60,16 +70,13 @@ namespace Payroll
             dbForm.Show();
         }
 
-        private void SearchButton_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine($"Search for {SearchTextBox.Text}");
-        }
-
         private void Cell_Clicked(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
-                EmployeeModel employeeDetail = employeeList[e.RowIndex];
+                string IDCellValue = EmployeeDataGrid[0, EmployeeDataGrid.CurrentRow.Index].Value.ToString();
+
+                EmployeeModel employeeDetail = employeeList.Where(p => p.ID == IDCellValue).FirstOrDefault() as EmployeeModel;
                 PersonalizedDeductionForm personalized = new PersonalizedDeductionForm(employeeDetail);
                 personalized.Show();
             }
@@ -79,7 +86,26 @@ namespace Payroll
         {
             if (e.RowIndex >= 0)
             {
-                EmployeeModel employeeDetail = employeeList[e.RowIndex];
+                string IDCellValue = EmployeeDataGrid[0, EmployeeDataGrid.CurrentRow.Index].Value.ToString();
+
+                EmployeeModel employeeDetail = employeeList.Where(p => p.ID == IDCellValue).FirstOrDefault() as EmployeeModel;
+            }
+        }
+
+        private void Text_Changed(object sender, EventArgs e)
+        {
+            Console.WriteLine($"Search for {SearchTextBox.Text}");
+            employeeList.Clear();
+
+            if (string.IsNullOrEmpty(SearchTextBox.Text))
+            {
+                GetData();
+                PopulateListView();
+            }
+            else
+            {
+                SearchData();
+                PopulateListView();
             }
         }
     }

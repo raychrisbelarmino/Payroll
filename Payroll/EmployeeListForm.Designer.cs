@@ -32,9 +32,9 @@
             this.BackMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.AddEmployeeButton = new System.Windows.Forms.Button();
             this.HeaderLabel = new System.Windows.Forms.Label();
-            this.SearchButton = new System.Windows.Forms.Button();
             this.SearchTextBox = new System.Windows.Forms.TextBox();
             this.EmployeeDataGrid = new System.Windows.Forms.DataGridView();
+            this.SearchLabel = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeDataGrid)).BeginInit();
             this.SuspendLayout();
@@ -76,29 +76,20 @@
             this.HeaderLabel.TabIndex = 2;
             this.HeaderLabel.Text = "List of Employees";
             // 
-            // SearchButton
-            // 
-            this.SearchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.SearchButton.Location = new System.Drawing.Point(712, 87);
-            this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(76, 29);
-            this.SearchButton.TabIndex = 3;
-            this.SearchButton.Text = "Search";
-            this.SearchButton.UseVisualStyleBackColor = true;
-            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
-            // 
             // SearchTextBox
             // 
             this.SearchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.SearchTextBox.Location = new System.Drawing.Point(313, 89);
+            this.SearchTextBox.Location = new System.Drawing.Point(395, 90);
             this.SearchTextBox.Name = "SearchTextBox";
             this.SearchTextBox.Size = new System.Drawing.Size(393, 26);
             this.SearchTextBox.TabIndex = 4;
+            this.SearchTextBox.TextChanged += new System.EventHandler(this.Text_Changed);
             // 
             // EmployeeDataGrid
             // 
             this.EmployeeDataGrid.AllowUserToAddRows = false;
             this.EmployeeDataGrid.AllowUserToDeleteRows = false;
+            this.EmployeeDataGrid.BackgroundColor = System.Drawing.Color.White;
             this.EmployeeDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.EmployeeDataGrid.Location = new System.Drawing.Point(12, 122);
             this.EmployeeDataGrid.Name = "EmployeeDataGrid";
@@ -108,14 +99,24 @@
             this.EmployeeDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cell_Clicked);
             this.EmployeeDataGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cell_DoubleClicked);
             // 
+            // SearchLabel
+            // 
+            this.SearchLabel.AutoSize = true;
+            this.SearchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.SearchLabel.Location = new System.Drawing.Point(329, 93);
+            this.SearchLabel.Name = "SearchLabel";
+            this.SearchLabel.Size = new System.Drawing.Size(60, 20);
+            this.SearchLabel.TabIndex = 6;
+            this.SearchLabel.Text = "Search";
+            // 
             // EmployeeListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.SearchLabel);
             this.Controls.Add(this.EmployeeDataGrid);
             this.Controls.Add(this.SearchTextBox);
-            this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.HeaderLabel);
             this.Controls.Add(this.AddEmployeeButton);
             this.Controls.Add(this.menuStrip1);
@@ -137,8 +138,8 @@
         private System.Windows.Forms.ToolStripMenuItem BackMenu;
         private System.Windows.Forms.Button AddEmployeeButton;
         private System.Windows.Forms.Label HeaderLabel;
-        private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.TextBox SearchTextBox;
         private System.Windows.Forms.DataGridView EmployeeDataGrid;
+        private System.Windows.Forms.Label SearchLabel;
     }
 }

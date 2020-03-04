@@ -121,6 +121,7 @@
             // 
             this.DoneDeductionsDataGrid.AllowUserToAddRows = false;
             this.DoneDeductionsDataGrid.AllowUserToDeleteRows = false;
+            this.DoneDeductionsDataGrid.BackgroundColor = System.Drawing.Color.White;
             this.DoneDeductionsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DoneDeductionsDataGrid.Location = new System.Drawing.Point(0, 3);
             this.DoneDeductionsDataGrid.Name = "DoneDeductionsDataGrid";
