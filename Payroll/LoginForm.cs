@@ -15,6 +15,9 @@ namespace Payroll
         public LoginForm()
         {
             InitializeComponent();
+
+            UsernameTextBox.Text = "temp";
+            PasswordTextBox.Text = "temp";
         }
 
         private void LoginButton_Click(object sender, EventArgs e)

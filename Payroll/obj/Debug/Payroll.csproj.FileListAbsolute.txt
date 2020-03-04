@@ -10,3 +10,4 @@ D:\Projects\Payroll\Payroll\obj\Debug\Payroll.exe
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.pdb
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.DashboardForm.resources
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.EmployeeListForm.resources
+D:\Projects\Payroll\Payroll\obj\Debug\Payroll.PersonalizedDeductionForm.resources

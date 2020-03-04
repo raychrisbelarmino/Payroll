@@ -34,7 +34,9 @@
             this.HeaderLabel = new System.Windows.Forms.Label();
             this.SearchButton = new System.Windows.Forms.Button();
             this.SearchTextBox = new System.Windows.Forms.TextBox();
+            this.EmployeeDataGrid = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -93,11 +95,25 @@
             this.SearchTextBox.Size = new System.Drawing.Size(393, 26);
             this.SearchTextBox.TabIndex = 4;
             // 
+            // EmployeeDataGrid
+            // 
+            this.EmployeeDataGrid.AllowUserToAddRows = false;
+            this.EmployeeDataGrid.AllowUserToDeleteRows = false;
+            this.EmployeeDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.EmployeeDataGrid.Location = new System.Drawing.Point(12, 122);
+            this.EmployeeDataGrid.Name = "EmployeeDataGrid";
+            this.EmployeeDataGrid.ReadOnly = true;
+            this.EmployeeDataGrid.Size = new System.Drawing.Size(776, 316);
+            this.EmployeeDataGrid.TabIndex = 5;
+            this.EmployeeDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cell_Clicked);
+            this.EmployeeDataGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cell_DoubleClicked);
+            // 
             // EmployeeListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.EmployeeDataGrid);
             this.Controls.Add(this.SearchTextBox);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.HeaderLabel);
@@ -109,6 +125,7 @@
             this.Text = "EmployeeList";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,5 +139,6 @@
         private System.Windows.Forms.Label HeaderLabel;
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.TextBox SearchTextBox;
+        private System.Windows.Forms.DataGridView EmployeeDataGrid;
     }
 }
