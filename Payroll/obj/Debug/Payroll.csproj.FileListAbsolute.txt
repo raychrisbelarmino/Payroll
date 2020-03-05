@@ -1,13 +1,12 @@
 D:\Projects\Payroll\Payroll\bin\Debug\Payroll.exe.config
 D:\Projects\Payroll\Payroll\bin\Debug\Payroll.exe
 D:\Projects\Payroll\Payroll\bin\Debug\Payroll.pdb
-D:\Projects\Payroll\Payroll\obj\Debug\Payroll.csprojAssemblyReference.cache
+D:\Projects\Payroll\Payroll\obj\Debug\Payroll.DashboardForm.resources
+D:\Projects\Payroll\Payroll\obj\Debug\Payroll.EmployeeListForm.resources
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.LoginForm.resources
+D:\Projects\Payroll\Payroll\obj\Debug\Payroll.PersonalizedDeductionForm.resources
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.Properties.Resources.resources
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.csproj.GenerateResource.cache
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.csproj.CoreCompileInputs.cache
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.exe
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.pdb
-D:\Projects\Payroll\Payroll\obj\Debug\Payroll.DashboardForm.resources
-D:\Projects\Payroll\Payroll\obj\Debug\Payroll.EmployeeListForm.resources
-D:\Projects\Payroll\Payroll\obj\Debug\Payroll.PersonalizedDeductionForm.resources
