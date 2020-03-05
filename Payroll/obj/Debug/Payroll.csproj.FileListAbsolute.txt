@@ -10,3 +10,4 @@ D:\Projects\Payroll\Payroll\obj\Debug\Payroll.csproj.GenerateResource.cache
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.csproj.CoreCompileInputs.cache
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.exe
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.pdb
+D:\Projects\Payroll\Payroll\obj\Debug\Payroll.csprojAssemblyReference.cache

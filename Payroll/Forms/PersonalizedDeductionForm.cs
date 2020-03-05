@@ -102,6 +102,7 @@ namespace Payroll
             });
 
             //save to db
+            DialogResult result = MessageBox.Show("Personal deduction added.", "", MessageBoxButtons.OK);
         }
     
         TextBox CreateTextBox(string name, string text, Point loc, int width)
@@ -139,6 +140,7 @@ namespace Payroll
             employee.Deductions[ndx].DateStarted = (this.Controls.Find($"deductDate{ndx + 1}", true)[0] as TextBox).Text; ;
 
             //save to db
+            DialogResult result = MessageBox.Show("Personal deduction saved.", "", MessageBoxButtons.OK);
         }
 
         private void BtnDel_Click(object sender, EventArgs e)
@@ -162,6 +164,7 @@ namespace Payroll
             PopulateDeductions();
 
             //save to db
+            DialogResult result = MessageBox.Show("Personal deduction deleted.", "", MessageBoxButtons.OK);
         }
     }
 }
