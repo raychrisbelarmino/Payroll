@@ -97,7 +97,9 @@
             this.EmployeeDataGrid.Size = new System.Drawing.Size(776, 316);
             this.EmployeeDataGrid.TabIndex = 5;
             this.EmployeeDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cell_Clicked);
+            this.EmployeeDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployeeDataGrid_CellContentClick);
             this.EmployeeDataGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Cell_DoubleClicked);
+            this.EmployeeDataGrid.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.Cell_DoubleClicked);
             // 
             // SearchLabel
             // 

@@ -58,6 +58,12 @@
     <Compile Include="Forms\EmployeeListForm.Designer.cs">
       <DependentUpon>EmployeeListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\SalaryDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SalaryDetail.Designer.cs">
+      <DependentUpon>SalaryDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PersonalizedDeductionForm.resx">
       <DependentUpon>PersonalizedDeductionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SalaryDetail.resx">
+      <DependentUpon>SalaryDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

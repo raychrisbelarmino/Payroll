@@ -89,6 +89,9 @@ namespace Payroll
                 string IDCellValue = EmployeeDataGrid[0, EmployeeDataGrid.CurrentRow.Index].Value.ToString();
 
                 EmployeeModel employeeDetail = employeeList.Where(p => p.ID == IDCellValue).FirstOrDefault() as EmployeeModel;
+                SalaryDetail openSD = new SalaryDetail(employeeDetail);
+                openSD.Show();
+
             }
         }
 
@@ -106,6 +109,24 @@ namespace Payroll
             {
                 SearchData();
                 PopulateListView();
+            }
+        }
+
+        private void EmployeeDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Cell_DoubleClicked(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                string IDCellValue = EmployeeDataGrid[0, EmployeeDataGrid.CurrentRow.Index].Value.ToString();
+
+                EmployeeModel employeeDetail = employeeList.Where(p => p.ID == IDCellValue).FirstOrDefault() as EmployeeModel;
+                SalaryDetail openSD = new SalaryDetail(employeeDetail);
+                openSD.Show();
+
             }
         }
     }

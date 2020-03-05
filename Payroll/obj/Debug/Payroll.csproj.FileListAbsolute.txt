@@ -10,3 +10,16 @@ D:\Projects\Payroll\Payroll\obj\Debug\Payroll.csproj.GenerateResource.cache
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.csproj.CoreCompileInputs.cache
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.exe
 D:\Projects\Payroll\Payroll\obj\Debug\Payroll.pdb
+C:\Users\jason\Desktop\Payroll\Payroll\bin\Debug\Payroll.exe.config
+C:\Users\jason\Desktop\Payroll\Payroll\bin\Debug\Payroll.exe
+C:\Users\jason\Desktop\Payroll\Payroll\bin\Debug\Payroll.pdb
+C:\Users\jason\Desktop\Payroll\Payroll\obj\Debug\Payroll.csprojAssemblyReference.cache
+C:\Users\jason\Desktop\Payroll\Payroll\obj\Debug\Payroll.DashboardForm.resources
+C:\Users\jason\Desktop\Payroll\Payroll\obj\Debug\Payroll.EmployeeListForm.resources
+C:\Users\jason\Desktop\Payroll\Payroll\obj\Debug\Payroll.LoginForm.resources
+C:\Users\jason\Desktop\Payroll\Payroll\obj\Debug\Payroll.PersonalizedDeductionForm.resources
+C:\Users\jason\Desktop\Payroll\Payroll\obj\Debug\Payroll.Properties.Resources.resources
+C:\Users\jason\Desktop\Payroll\Payroll\obj\Debug\Payroll.csproj.GenerateResource.cache
+C:\Users\jason\Desktop\Payroll\Payroll\obj\Debug\Payroll.exe
+C:\Users\jason\Desktop\Payroll\Payroll\obj\Debug\Payroll.pdb
+C:\Users\jason\Desktop\Payroll\Payroll\obj\Debug\Payroll.SalaryDetail.resources
